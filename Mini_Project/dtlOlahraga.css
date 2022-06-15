@@ -1,0 +1,258 @@
+html {
+    background-color: #2D2424;
+    margin: auto;
+    max-width: 1350px;
+}
+
+header {
+    width: auto;
+    margin-top: -37px;
+    height: 93px;
+    padding: 5px;
+    background: #2D2424;
+    z-index: 1;
+}
+
+h1 {
+    margin-right: 190px;
+    color: white;
+    font-weight: normal;
+}
+
+div#title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 1335px;
+    height: 70px;
+}
+
+div#navbar {
+    background-color: #5C3D2E;
+    padding-bottom: 5px;
+    height: 53px;
+    line-height: 30px;
+    position: fixed;
+    width: 1323px;
+    z-index: 1;
+    font-family: Helvetica;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div#navbar ul {
+    list-style: none;
+}
+
+div#navbar ul li a {
+    float: left;
+    width: 150px;
+    display: block;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+div#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    display: block;
+    height: 30px;
+    opacity: 0.8;
+}
+
+div#navbar ul li:hover ul {
+    display: block;
+}
+
+div#navbar ul ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #5C3D2E;
+    left: 190px;
+    top: 47px;
+    width: 200px;
+}
+
+div#navbar ul ul li a {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 160px;
+    margin-top: 10px;
+}
+
+div#navbar ul ul li a:hover {
+    color: black;
+}
+
+p {
+    padding: 50px;
+    height: 100%;
+    width: 40%;
+    float: left;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #E0C097;
+    position: static;
+    text-align: justify;
+    font-size: 18px;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.sub {
+    font-size: 20px;
+}
+
+div.video {
+    padding: 50px;
+    height: 100%;
+    width: 43%;
+    float: right;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #E0C097;
+    z-index: 2;
+    position: static;
+    text-align: justify;
+    font-size: 18px;
+}
+
+h2 {
+    background-color: #2D2424;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1350px;
+    border-radius: 15px;
+}
+
+iframe {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    box-shadow: 4px 6px rgb(0 0 0 / 0.2);
+}
+
+#sub {
+    width: 35%;
+    height: 35%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    box-shadow: 4px 6px rgb(0 0 0 / 0.2);
+}
+
+h4 {
+    background-color: #B85C38;
+    width: 426px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+pre {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    left: -200px;
+}
+
+main table {
+    width: auto;
+    display: block;
+    justify-content: center;
+    max-width: 1350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+header>#header>img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 30px;
+    margin-left: 85px;
+    border-radius: 100px;
+}
+
+footer {
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+#yt {
+    width: 30px;
+    height: 30px;
+}
+
+#footer {
+    background-color: #E0C097;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#ins {
+    width: 30px;
+    height: 30px;
+}
+
+#face {
+    width: 30px;
+    height: 30px;
+}
+
+footer img {
+    margin: 5px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    opacity: 1;
+    background-color: #5C3D2E;
+    border-radius: 20px;
+}
+
+footer p {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+    background: none;
+    padding: 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    transition: 2s;
+}
