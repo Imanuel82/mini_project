@@ -1,0 +1,62 @@
+<?php
+session_start();
+require "functions.php";
+
+if(!isset($_SESSION['username'])){
+    header("Location:Login_Admin.php");
+}
+
+
+if(isset($_POST["submit"])){
+    if(addOlahraga($_POST)>0){
+        echo "
+            <script>
+                alert('data berhasil ditambahkan!');
+                document.location.href = 'crudOlahraga.php';
+            </script>
+        ";
+    } else {
+        echo "
+            <script>
+                alert('data gagal ditambahkan!');
+                document.location.href = 'crudOlahraga.php';
+            </script>
+        ";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Olahraga</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Add Data Olahraga</h1>
+        </div>
+        <div>
+            <form action="addOlahraga.php" method="POST">
+                <ul>
+                    <div>
+                        <label for="tipeOlahraga">Tipe Olahraga</label>
+                        <input type="text" name="tipeOlahraga" id="tipeOlahraga" placeholder="Tipe Olahraga" required>
+                    </div>
+                    <div>
+                        <label for="urlGambarMain">Link Gambar</label>
+                        <input type="text" name="urlGambarMain" id="urlGambarMain" placeholder="Link Gambar Main" required>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit">Insert</button>
+                        <br>
+                        <a href="crudOlahraga.php">Back</a>
+                    </div>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

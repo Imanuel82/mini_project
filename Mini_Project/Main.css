@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #CA965C;
+}
+
+header {
+    width: auto;
+    margin-top: 5px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #F4DFBA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-left: 85px;
+    border-radius: 100px;
+}
+
+header img#login {
+    width: 55px;
+    height: 55px;
+    margin-right: 85px;
+    background-color: white;
+}
+
+header div#search {
+    margin-right: 90px;
+}
+
+button.search {
+    background-color: #876445;
+    color: #F4DFBA;
+    width: 100px;
+    font-size: 15px;
+    font-style: normal;
+    padding: 5px 10px;
+    position: relative;
+    left: 15%;
+    margin: auto;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+button.search:hover {
+    opacity: 1;
+}
+
+input {
+    width: 340px;
+    height: 25px;
+    position: relative;
+    left: 15%;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin: auto;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-style: double;
+    padding-left: 15px;
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .luar {
+    border: 5px double;
+    border-color: white;
+    border-radius: 50px;
+}
+
+main table {
+    overflow: auto;
+    padding-bottom: 100px;
+    padding: 50px 100px 150px 100px;
+    text-align: center;
+}
+
+main table td a {
+    text-decoration: none;
+    background-color: #876445;
+    color: #F4DFBA;
+    padding: 40px 80px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    width: 150px;
+    margin: auto;
+    border-radius: 20px;
+    margin-left: 90px;
+}
+
+main table td a:hover {
+    opacity: 1;
+    margin-left: 90px;
+}
+
+#olg {
+    margin-left: 11px;
+    margin-right: 11px;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+footer {
+    background-color: #F4DFBA;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    text-align: center;
+}
+
+footer table {
+    display: flex;
+    justify-content: center;
+}
+
+#yt {
+    width: 30px;
+    height: 30px;
+}
+
+#ins {
+    width: 30px;
+    height: 30px;
+}
+
+#face {
+    width: 30px;
+    height: 30px;
+}
+
+footer img {
+    margin: 5px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    opacity: 1;
+    background-color: #5C3D2E;
+    border-radius: 20px;
+}
+
+footer p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    right: -40px;
+}
+
+.sticky input {
+    top: 4px;
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.sticky input:hover {
+    opacity: 1;
+}
+
+.sticky button.search {
+    top: 4px;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.left.reveal {
+    position: relative;
+    transform: translateX(-140px);
+    opacity: 0;
+    transition: 2s;
+}
+
+.left.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.right.reveal {
+    position: relative;
+    transform: translateX(140px);
+    opacity: 0;
+    transition: 2s;
+}
+
+.right.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
