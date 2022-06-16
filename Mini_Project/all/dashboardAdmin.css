@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #CA965C;
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FAEBD7;
+    text-align: center;
+    border-radius: 20px;
+}
+#crud,#manage{
+    text-decoration: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+}
+
+div form button{
+    padding: 10px;
+    background-color: #008b8b;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+div form button:hover{
+    opacity: 1;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid brown;
+    padding: 14px 35px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover {
+    background: #BDB76b;
+}
