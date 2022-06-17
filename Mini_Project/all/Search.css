@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    background-color: #CA965C;
+}
+
+header {
+    width: auto;
+    margin-top: 5px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #F4DFBA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-left: 85px;
+    border-radius: 100px;
+}
+
+header img#login {
+    width: 55px;
+    height: 55px;
+    margin-right: 85px;
+    background-color: white;
+}
+
+header div#search {
+    margin-right: 90px;
+}
+
+button.search {
+    background-color: #876445;
+    color: #F4DFBA;
+    width: 100px;
+    font-size: 15px;
+    font-style: normal;
+    padding: 5px 10px;
+    position: relative;
+    left: 15%;
+    margin: auto;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+button.search:hover {
+    opacity: 1;
+}
+input {
+    width: 340px;
+    height: 25px;
+    position: relative;
+    left: 15%;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin: auto;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-style: double;
+    padding-left: 15px;
+}
+.reveal{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.reveal.active {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+}
+#container3 {
+    width: 300px;
+    height: 200px;
+    overflow: scroll;
+    margin-bottom : 100px;
+    background-color:white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+p,pre{
+    margin: 10px;
+}
+#olg{
+    display: flex;
+    justify-content: 50px;
+    margin-top: 50px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+input.input2{
+    left: 0%;
+    width: 300px;
+}
+#tipe,#levels,#nama{
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-style: double;
+    margin-bottom: 10px;
+}
+button.input2{
+    background-color: #876445;
+    color: #F4DFBA;
+    width: 100px;
+    font-size: 13px;
+    font-style: normal;
+    padding: 5px;
+    position: relative;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+.konten{
+    margin-right: 10px;
+}
+a>img {
+    border: 1px solid black;
+    transition: 0.5s;
+}
+a>img:hover {
+    opacity: 0.7;
+}

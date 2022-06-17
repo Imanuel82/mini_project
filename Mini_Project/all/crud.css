@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    text-align: center;
+    background-color: #FAEBD7;
+}
+
+html,body{
+    height: 100%;
+    background-color: #CA965C;
+}
+
+th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+table {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+}
+th{
+    background-color: cadetblue;
+}
+td{
+    background-color: floralwhite;
+}
